@@ -113,7 +113,7 @@ def checksum_value(sid: str) -> str:
 
 if __name__ == "__main__":
     # Put your own student ID and copy the printed checksum value into your Pull Request description.
-    sid = "2025150000"
+    sid = "2025311532"
     print(checksum_value(sid))
 
     # Example usage
