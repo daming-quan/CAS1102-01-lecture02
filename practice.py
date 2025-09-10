@@ -18,30 +18,7 @@ class Vector3:
     - operator *: cross product (v1 * v2)
     """
 
-    # Do not modify the code inside the getter and setter functions.
-    @property
-    def x(self) -> float:
-        return self.__x
-
-    @x.setter
-    def x(self, value: float) -> None:
-        self.__x = float(value)
-
-    @property
-    def y(self) -> float:
-        return self.__y
-
-    @y.setter
-    def y(self, value: float) -> None:
-        self.__y = float(value)
-
-    @property
-    def z(self) -> float:
-        return self.__z
-
-    @z.setter
-    def z(self, value: float) -> None:
-        self.__z = float(value)
+    # TODO: Implement getter and setter methods for variables x, y, and z, respectively.
 
     # Do not modify the code inside this function.
     def to_tuple(self):
