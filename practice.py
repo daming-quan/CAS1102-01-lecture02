@@ -101,3 +101,57 @@ if __name__ == "__main__":
     # print(v1 - v2)  # Expected: Vector3(x=-3, y=-3, z=-3)
     # print(v1 * v2)  # Expected: Vector3(x=-3, y=6, z=-3)
     # print(v2 * v1)  # Expected: Vector3(x=3, y=-6, z=3)
+   
+class Vector3:
+    def __init__(self, x=0, y=0, z=0):
+        self.__x = x
+        self.__y = y
+        self.__z = z
+
+    # Getter
+    def get_x(self): return self.__x
+    def get_y(self): return self.__y
+    def get_z(self): return self.__z
+
+    # Setter
+    def set_x(self, value): self.__x = value
+    def set_y(self, value): self.__y = value
+    def set_z(self, value): self.__z = value
+
+    def __repr__(self):
+        return f"Vector3({self.__x}, {self.__y}, {self.__z})"
+    class Vector3:
+    def __init__(self, x=0, y=0, z=0):
+        self.__x = x
+        self.__y = y
+        self.__z = z
+
+    def get_x(self): return self.__x
+    def get_y(self): return self.__y
+    def get_z(self): return self.__z
+
+    def set_x(self, value): self.__x = value
+    def set_y(self, value): self.__y = value
+    def set_z(self, value): self.__z = value
+
+    def __repr__(self):
+        return f"Vector3({self.__x}, {self.__y}, {self.__z})"
+
+    # 加法
+    def __add__(self, other):
+        return Vector3(self.__x + other.__x, self.__y + other.__y, self.__z + other.__z)
+
+    # 减法
+    def __sub__(self, other):
+        return Vector3(self.__x - other.__x, self.__y - other.__y, self.__z - other.__z)
+
+    # 叉乘
+    def __mul__(self, other):
+        x = self.__y * other.__z - self.__z * other.__y
+        y = self.__z * other.__x - self.__x * other.__z
+        z = self.__x * other.__y - self.__y * other.__x
+        return Vector3(x, y, z)
+    
+
+ 
+    
