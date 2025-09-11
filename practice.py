@@ -6,7 +6,7 @@ class Vector3:
     # TODO: Implement the constructor
     """
     - Initialize a Vector3 object with three parameters (x, y, z).
-    - Make sure that all the member variables are private to avoid accidental modification.
+    - Make sure that all the member variables are private (using double underscore) to avoid accidental modification.
     - Member variables must be float so that calculations are consistent.
     """
 
